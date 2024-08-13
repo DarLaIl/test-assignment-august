@@ -1,26 +1,153 @@
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+:focus,
+:active {
+  outline: none;
 }
-button {font-family:inherit;}
+a:focus,
+a:active {
+  outline: none;
+}
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+button {
+  font-family: inherit;
+}
 
+.preloader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  opacity: 1;
+  background-color: #000;
+  z-index: 5;
+}
+.preloader__wrapper {
+  position: absolute;
+  display: flex;
+  top: 190px;
+  height: 578px;
+}
+.preloader__img {
+  overflow: hidden;
+}
+.img__left {
+  align-self: center;
+  width: 673px;
+  height: 184px;
+}
+.img__middle {
+  align-self: flex-start;
+  width: 495px;
+  height: 177px;
+}
+.img__right {
+  align-self: flex-end;
+  height: 177px;
+}
+
+.header {
+}
+.header__nav {
+}
+.nav__logo {
+}
+.nav__contacts {
+}
+.contacts__text {
+}
+.contacts__button {
+}
+.contacts__ball {
+}
+.contacts__ball--red {
+}
+.main {
+
+}
+.section {
+}
+.section-about {
+}
+.section-about__video {
+}
+.section-about__company-name {
+}
+.company-name__img {
+}
+.section-about__company-info {
+}
+.company-info__block {
+}
+.block__item {
+}
+.block-text {
+}
+.block-text--large {
+}
+.section-features {
+}
+.section-features__mockup {
+}
+.mockup__screen {
+}
+.mockup__video {
+}
+.section-features__blur {
+}
+.blur__text {
+}
+.section-features__traits {
+}
+.traits__container {
+}
+.traits__text {
+}
+.section-awards {
+}
+.section-awards__title {
+}
+.section-awards__container {
+}
+.container__item {
+}
+.row {
+}
+.row__column {
+}
+.column__web {
+}
+.web__text {
+}
+.web__img {
+}
+.column__award {
+}
+.award__text {
+}
+.column__date {
+}
+.date {
+}
+.column__project {
+}
+.project__text {
+}
+.project--arrow {
+}
