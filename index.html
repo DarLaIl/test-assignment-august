@@ -41,10 +41,12 @@
           <a href="#" target="_blank">СВЯЗАТЬСЯ</a>
         </div>
         <div class="contacts__button">
-          <div class="contacts__ball contacts__ball--white"></div>
-          <div class="contacts__ball contacts__ball--red"></div>
-          <div class="contacts__ball contacts__ball--white"></div>
-          <div class="contacts__ball contacts__ball--white"></div>
+          <div class="contacts__button__drop">
+            <div class="contacts__ball contacts__ball--white"></div>
+            <div class="contacts__ball contacts__ball--red"></div>
+            <div class="contacts__ball contacts__ball--white"></div>
+            <div class="contacts__ball contacts__ball--white"></div>
+          </div>
         </div>
       </nav>
     </header>
@@ -62,40 +64,21 @@
             <source src="video/bg.mp4" type="video/mp4" />
           </video>
         </div>
-        <!--<div class="section-about__company-name">
-          <div class="company-name__img img__left">
-            <img
-              src="img/nastARTWEBLeft.png"
-              alt="img"
-              class="img__left--left"
-            />
-          </div>
-          <div class="company-name__img img__middle">
-            <img
-              src="img/nastARTWEBMiddle.png"
-              alt="img"
-              class="img__middle--middle"
-            />
-          </div>
-          <div class="company-name__img img__right">
-            <img
-              src="img/nastARTWEBRight.png"
-              alt="img"
-              class="img__right--right"
-            />
-          </div>
-        </div>-->
         <div class="section-about__company-info">
           <div class="company-info__block">
             <div class="block__item">
               <p class="block-text block-text--large">
-                powerful test Digital Agency
+                powerful test <br />
+                Digital Agency
               </p>
             </div>
           </div>
           <div class="company-info__block">
             <div class="block__item">
-              <p class="block-text">что и как делаем</p>
+              <p class="block-text">
+                что и как <br />
+                делаем
+              </p>
             </div>
             <div class="block__item">
               <p class="block-text">текст рыба</p>
@@ -108,13 +91,27 @@
       </section>
       <section class="section section-features">
         <div class="section-features__mockup">
-          <img src="img/main.png" alt="screen" class="mockup__screen" />
-          <video class="mockup__video" src=""></video>
+          <div class="mockup__screen">
+            <img src="img/main.png" alt="screen" />
+            <div class="mockup__video">
+              <video
+                autoplay="autoplay"
+                loop="loop"
+                muted
+                defaultMuted
+                playsinline
+                class="mockup__video--video"
+              >
+                <source src="video/case.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
         </div>
-        <div class="section-features__blur">
-          <p class="blur__text">
-            The world moves fast, we keep pace. Cut through the noise with our
-            process.
+        <div class="section-features__blur"></div>
+        <div class="section_features__text">
+          <p class="text--inside">
+            The world moves fast, we keep pace. <br />
+            Cut through the noise with our process.
           </p>
         </div>
         <div class="section-features__traits">
@@ -122,7 +119,9 @@
             <p class="traits__text">Комплексные возможности проектирования</p>
           </div>
           <div class="traits__container">
-            <p class="traits__text">Мощный дуэт, движимый дизайном</p>
+            <p class="traits__text traits__text--right">
+              Мощный дуэт, движимый дизайном
+            </p>
           </div>
         </div>
       </section>
@@ -132,7 +131,9 @@
           <div class="container__item row">
             <div class="row__column column__web">
               <p class="web__text">nastart.dev</p>
-              <img src="" alt="" class="web__img" />
+              <div class="img__wrapper">
+                <img src="img/frame.png" alt="" class="web__img" />
+              </div>
             </div>
             <div class="row__column column__award">
               <p class="award__text">Madeontilda</p>
@@ -142,13 +143,15 @@
             </div>
             <div class="row__column column__project">
               <p class="project__text">ПРОЕКТ</p>
-              <img src="" alt="" class="project--arrow" />
+              <img src="img/Vector.png" alt="arrow" class="project--arrow" />
             </div>
           </div>
           <div class="container__item row">
             <div class="row__column column__web">
               <p class="web__text">nastart.dev</p>
-              <img src="" alt="" class="web__img" />
+              <div class="img__wrapper">
+                <img src="img/frame.png" alt="" class="web__img" />
+              </div>
             </div>
             <div class="row__column column__award">
               <p class="award__text">awwwards // Honor Mention</p>
@@ -158,13 +161,15 @@
             </div>
             <div class="row__column column__project">
               <p class="project__text">ПРОЕКТ</p>
-              <img src="" alt="" class="project--arrow" />
+              <img src="img/Vector.png" alt="arrow" class="project--arrow" />
             </div>
           </div>
           <div class="container__item row">
             <div class="row__column column__web">
               <p class="web__text">nastart.dev</p>
-              <img src="" alt="" class="web__img" />
+              <div class="img__wrapper">
+                <img src="img/frame.png" alt="" class="web__img" />
+              </div>
             </div>
             <div class="row__column column__award">
               <p class="award__text">dprofile // лучшее</p>
@@ -174,13 +179,15 @@
             </div>
             <div class="row__column column__project">
               <p class="project__text">ПРОЕКТ</p>
-              <img src="" alt="" class="project--arrow" />
+              <img src="img/Vector.png" alt="arrow" class="project--arrow" />
             </div>
           </div>
           <div class="container__item row">
             <div class="row__column column__web">
               <p class="web__text">nastart.dev</p>
-              <img src="" alt="" class="web__img" />
+              <div class="img__wrapper">
+                <img src="img/frame.png" alt="" class="web__img" />
+              </div>
             </div>
             <div class="row__column column__award">
               <p class="award__text">dprofile // брендинг</p>
@@ -190,13 +197,15 @@
             </div>
             <div class="row__column column__project">
               <p class="project__text">ПРОЕКТ</p>
-              <img src="" alt="" class="project--arrow" />
+              <img src="img/Vector.png" alt="arrow" class="project--arrow" />
             </div>
           </div>
           <div class="container__item row">
             <div class="row__column column__web">
               <p class="web__text">nastart.dev</p>
-              <img src="" alt="" class="web__img" />
+              <div class="img__wrapper">
+                <img src="img/frame.png" alt="" class="web__img" />
+              </div>
             </div>
             <div class="row__column column__award">
               <p class="award__text">dprofile // интерфейсы</p>
@@ -206,23 +215,25 @@
             </div>
             <div class="row__column column__project">
               <p class="project__text">ПРОЕКТ</p>
-              <img src="" alt="" class="project--arrow" />
+              <img src="img/Vector.png" alt="arrow" class="project--arrow" />
             </div>
           </div>
           <div class="container__item row">
             <div class="row__column column__web">
               <p class="web__text">nastart.dev</p>
-              <img src="" alt="" class="web__img" />
+              <div class="img__wrapper">
+                <img src="img/frame.png" alt="" class="web__img" />
+              </div>
             </div>
             <div class="row__column column__award">
               <p class="award__text">CSSDA // UI Design Award</p>
             </div>
             <div class="row__column column__date">
               <p class="date">08.11.2023</p>
-              <div class="row__column column__project">
-                <p class="project__text">ПРОЕКТ</p>
-                <img src="" alt="" class="project--arrow" />
-              </div>
+            </div>
+            <div class="row__column column__project">
+              <p class="project__text">ПРОЕКТ</p>
+              <img src="img/Vector.png" alt="arrow" class="project--arrow" />
             </div>
           </div>
         </div>
