@@ -14,8 +14,10 @@
 :active {
   outline: none;
 }
+a,
 a:focus,
 a:active {
+  text-decoration: none;
   outline: none;
 }
 
@@ -28,20 +30,25 @@ body {
 button {
   font-family: inherit;
 }
+img {
+  vertical-align: top;
+}
 
 .preloader {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
-  opacity: 1;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
   background-color: #000;
   z-index: 5;
 }
 .preloader__wrapper {
-  position: absolute;
   display: flex;
-  top: 190px;
+  width: 87%;
   height: 578px;
 }
 .preloader__img {
@@ -49,48 +56,92 @@ button {
 }
 .img__left {
   align-self: center;
-  width: 673px;
-  height: 184px;
+}
+.img__left--left {
+  width: 100%;
 }
 .img__middle {
   align-self: flex-start;
-  width: 495px;
-  height: 177px;
+}
+.img__middle--middle {
+  width: 100%;
 }
 .img__right {
   align-self: flex-end;
-  height: 177px;
+}
+.img__right--right {
+  width: 100%;
 }
 
 .header {
-}
-.header__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px 0px 80px;
+  z-index: 2;
 }
 .nav__logo {
+  width: 20%;
 }
 .nav__contacts {
+  display: flex;
+  column-gap: 45px;
 }
-.contacts__text {
+.contacts__text a {
+  color: #ffffff;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
 }
 .contacts__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3px;
+  row-gap: 0;
+  width: 32px;
+  height: 30px;
+  padding: 3px;
 }
 .contacts__ball {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.contacts__ball--white {
+  border: 1px solid #ffffff;
 }
 .contacts__ball--red {
+  background-color: red;
 }
 .main {
-
-}
-.section {
 }
 .section-about {
+  height: 100vh;
+  width: 100vw;
 }
 .section-about__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#myVideo {
+  width: 100%;
+  height: 100%;
 }
 .section-about__company-name {
+  display: flex;
+  width: 87%;
+  height: 578px;
 }
-.company-name__img {
-}
+/*.company-name__img {
+}*/
 .section-about__company-info {
 }
 .company-info__block {

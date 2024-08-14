@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NastArtWeb</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="preloader">
       <div class="preloader__wrapper">
         <div class="preloader__img img__left">
-          <img
-            src="img/nastARTWEBLeft.png"
-            alt="img"
-            class="img__left--left"
-          />
+          <img src="img/nastARTWEBLeft.png" alt="img" class="img__left--left" />
         </div>
         <div class="preloader__img img__middle">
           <img
@@ -33,41 +35,56 @@
       </div>
     </div>
     <header class="header">
-      <nav class="header__nav">
-        <img src="img/LOGO NASTARTWEB.svg" alt="logo" class="nav__logo" />
-        <div class="nav__contacts">
-          <div class="contacts__text">СВЯЗАТЬСЯ</div>
-          <div class="contacts__button">
-            <div class="contacts__ball"></div>
-            <div class="contacts__ball contacts__ball--red"></div>
-            <div class="contacts__ball"></div>
-            <div class="contacts__ball"></div>
-          </div>
+      <img src="img/LOGO NASTARTWEB.svg" alt="logo" class="nav__logo" />
+      <nav class="nav__contacts">
+        <div class="contacts__text">
+          <a href="#" target="_blank">СВЯЗАТЬСЯ</a>
+        </div>
+        <div class="contacts__button">
+          <div class="contacts__ball contacts__ball--white"></div>
+          <div class="contacts__ball contacts__ball--red"></div>
+          <div class="contacts__ball contacts__ball--white"></div>
+          <div class="contacts__ball contacts__ball--white"></div>
         </div>
       </nav>
     </header>
     <main class="main">
       <section class="section section-about">
         <div class="section-about__video">
-          <video src=""></video>
+          <video
+            autoplay="autoplay"
+            loop="loop"
+            muted
+            defaultMuted
+            playsinline
+            id="myVideo"
+          >
+            <source src="video/bg.mp4" type="video/mp4" />
+          </video>
         </div>
-        <div class="section-about__company-name">
-          <img
-            src="img/nastARTWEBLeft.png"
-            alt="img"
-            class="company-name__img img--left"
-          />
-          <img
-            src="img/nastARTWEBMiddle.png"
-            alt="img"
-            class="company-name__img img--middle"
-          />
-          <img
-            src="img/nastARTWEBRight.png"
-            alt="img"
-            class="company-name__img img--right"
-          />
-        </div>
+        <!--<div class="section-about__company-name">
+          <div class="company-name__img img__left">
+            <img
+              src="img/nastARTWEBLeft.png"
+              alt="img"
+              class="img__left--left"
+            />
+          </div>
+          <div class="company-name__img img__middle">
+            <img
+              src="img/nastARTWEBMiddle.png"
+              alt="img"
+              class="img__middle--middle"
+            />
+          </div>
+          <div class="company-name__img img__right">
+            <img
+              src="img/nastARTWEBRight.png"
+              alt="img"
+              class="img__right--right"
+            />
+          </div>
+        </div>-->
         <div class="section-about__company-info">
           <div class="company-info__block">
             <div class="block__item">
