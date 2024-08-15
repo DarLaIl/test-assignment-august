@@ -7,32 +7,38 @@ document.querySelector('.contacts__button').addEventListener('click', () => {
   });
 });
 
-gsap.fromTo('.img__left--left', { y: 100 }, { y: 0, ease: 'power1.inOut' });
+gsap.fromTo(
+  '.img__left--left',
+  { y: 250 },
+  { y: 150, opacity: 1, ease: 'power1.inOut' }
+);
 gsap.fromTo(
   '.img__middle--middle',
   { y: 100 },
   {
     y: 0,
+    opacity: 1,
     ease: 'power1.inOut',
   }
 );
 gsap.fromTo(
   '.img__right--right',
-  { y: 100 },
+  { y: 400 },
   {
-    y: 0,
+    y: 300,
+    opacity: 1,
     ease: 'power1.inOut',
   }
 );
 
 gsap.to('.img__left', {
-  keyframes: [{ y: 0 }, { y: -170, delay: 1 }, { y: -90, delay: 1 }],
+  keyframes: [{ y: 0 }, { y: -155, delay: 1 }, { y: -50, delay: 1 }],
 });
 gsap.to('.img__middle', {
-  keyframes: [{ y: 0 }, { y: 0, delay: 1 }, { y: 80, delay: 1 }],
+  keyframes: [{ y: 0 }, { y: 0, delay: 1 }, { y: 100, delay: 1 }],
 });
 gsap.to('.img__right', {
-  keyframes: [{ y: 0 }, { y: -337, delay: 1 }, { y: -257, delay: 1 }],
+  keyframes: [{ y: 0 }, { y: -300, delay: 1 }, { y: -200, delay: 1 }],
 });
 gsap.fromTo(
   '.header',

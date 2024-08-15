@@ -24,8 +24,16 @@ a:active {
 body {
   overflow-x: hidden;
   height: 100vw;
-  width: 100%;
+  width: 100vw;
   background-color: #191919;
+}
+@media all and (max-width: 350px) {
+  body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #191919;
+  }
 }
 button {
   font-family: inherit;
@@ -40,38 +48,24 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: #000;
   z-index: 5;
 }
+
 .preloader__wrapper {
   display: flex;
   width: 90%;
-  height: 480px;
+  height: 70%;
 }
 .preloader__img {
   overflow: hidden;
 }
-.img__left {
-  align-self: center;
-}
-.img__left--left {
+.preloader__img img {
   width: 100%;
+  opacity: 0;
 }
-.img__middle {
-  align-self: flex-start;
-}
-.img__middle--middle {
-  width: 100%;
-}
-.img__right {
-  align-self: flex-end;
-}
-.img__right--right {
-  width: 100%;
-}
-
 .header {
   position: absolute;
   top: 0;
@@ -93,8 +87,19 @@ img {
   color: #ffffff;
   font-family: 'Roboto Flex', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
+}
+@media all and (max-width: 550px) {
+  .header {
+    padding: 20px 20px 0px 20px;
+  }
+  .contacts__text a {
+    display: none;
+  }
+  .nav__logo {
+    width: 60%;
+  }
 }
 .contacts__button__drop {
   cursor: pointer;
@@ -135,38 +140,46 @@ img {
   visibility: hidden;
   transition: opacity 1s, visibility 1s;
 }
-
 .section-about {
+  position: relative;
   height: 100vh;
   width: 100vw;
 }
 .section-about__video {
+  overflow: hidden;
+}
+#myVideo {
   position: absolute;
   top: 0;
   left: 0;
-}
-#myVideo {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.section-about__company-name {
-  display: flex;
-  width: 87%;
-  height: 578px;
-}
-
 .section-about__company-info {
   position: absolute;
   top: 390px;
-  left: 90px;
-  width: 87%;
+  left: 5%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
 }
+
 .company-info__block {
   display: flex;
-  width: 500px;
+  gap: 50px;
   justify-content: space-between;
+}
+@media all and (max-width: 550px) {
+  .section-about__company-info {
+    width: 100%;
+    left: 10%;
+  }
+  .block__item {
+    width: 100%;
+  }
 }
 .block-text {
   color: #ffffff;
@@ -184,10 +197,10 @@ img {
 }
 .section-features {
   position: absolute;
-  top: 450px;
+  top: 65%;
   left: 0;
   width: 100%;
-  height: 2700px;
+  height: 400%;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -195,15 +208,15 @@ img {
 }
 .section-features__mockup {
   position: sticky;
-  height: 600px;
-  width: 600px;
+  height: 40%;
+  width: 40%;
   z-index: 2;
   top: 200px;
   left: 30%;
 }
 .mockup__screen {
   position: relative;
-  width: 600px;
+  width: 100%;
 }
 .mockup__screen img {
   width: 100%;
@@ -216,7 +229,7 @@ img {
 }
 .section-features__blur {
   position: absolute;
-  top: 250px;
+  top: 3%;
   width: 1350px;
   height: 1350px;
   border-radius: 50%;
